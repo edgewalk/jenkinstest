@@ -6,7 +6,7 @@
 # export PROJ_PATH=这个jenkins任务在部署机器上的路径
 
 # maven编译git下的源码
-cd $PROJ_PATH/jenkinstest
+cd $PROJ_PATH
 mvn -DskipTests clean install
 
 # 删除原有的测试代码
@@ -14,8 +14,8 @@ rm -rf /data/jenkinstest/*.jar
 rm -rf /data/jenkinstest/*.sh
 
 # 替换代码
-cd /data/jenkins/
-cp $PROJ_PATH/jenkinstest/target/jenkinstest-0.0.1-SNAPSHOT-1.0.tar.gz .
+cd /data/jenkinstest/
+cp $PROJ_PATH/target/jenkinstest-0.0.1-SNAPSHOT-1.0.tar.gz .
 tar -zxvf jenkinstest-0.0.1-SNAPSHOT-1.0.tar.gz
 rm -rf jenkinstest-0.0.1-SNAPSHOT-1.0.tar.gz
 
