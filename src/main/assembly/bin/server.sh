@@ -3,7 +3,7 @@
 JAVA_PATH=/usr/local/services/jdk1.8.0_191/bin
 JAVA_OPS=" -Xmx128m -Xms128m -Dserver.port=8081 "
 SERVICEPATH=/data/jenkinstest
-SERVICENAME=jenkinstest-1.0-SNAPSHOT.jar
+SERVICENAME=jenkinstest-0.0.1-SNAPSHOT.jar
 
 start() {
     PROCESSID=$( ps aux |grep ${SERVICEPATH}/${SERVICENAME}| grep -v 'grep' | awk -F ' ' '{print $2}' )
