@@ -20,4 +20,4 @@ tar -zxvf jenkinstest-0.0.1-SNAPSHOT-1.0.tar.gz
 rm -rf jenkinstest-0.0.1-SNAPSHOT-1.0.tar.gz
 
 # 重启服务
-bin/server.sh restart
+./server.sh restart
