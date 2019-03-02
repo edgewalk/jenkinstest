@@ -1,9 +1,9 @@
 #! /bin/bash
 
 JAVA_PATH=/usr/local/service/jdk1.8.0_181/bin
-JAVA_OPS=" -Xmx1024m -Xms1024m -Dserver.port=8091 -Dspring.profiles.active=jp-test"
-SERVICEPATH=/data/test_web/logon/
-SERVICENAME=dow_logon-1.0-SNAPSHOT.jar
+JAVA_OPS=" -Xmx128m -Xms128m -Dserver.port=8090 "
+SERVICEPATH=/data/jenkinstest/
+SERVICENAME=jenkinstest-1.0-SNAPSHOT.jar
 
 start() {
     PROCESSID=$( ps aux |grep ${SERVICEPATH}/${SERVICENAME}| grep -v 'grep' | awk -F ' ' '{print $2}' )
