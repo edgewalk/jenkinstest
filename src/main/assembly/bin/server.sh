@@ -1,7 +1,7 @@
 #! /bin/bash
 
-JAVA_PATH=/usr/local/service/jdk1.8.0_181/bin
-JAVA_OPS=" -Xmx128m -Xms128m -Dserver.port=8090 "
+JAVA_PATH=/usr/local/services/jdk1.8.0_191/
+JAVA_OPS=" -Xmx128m -Xms128m -Dserver.port=8081 "
 SERVICEPATH=/data/jenkinstest/
 SERVICENAME=jenkinstest-1.0-SNAPSHOT.jar
 
